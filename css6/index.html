@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 5</title>
+</head>
+<style>
+    h2.judul{
+        font-family: sans-serif;
+        font-size: 30px;
+    }
+    p{
+        font-family: sans-serif;
+        font-size: 15px;
+        font-weight:unset;
+    }
+    li{
+        font-family: sans-serif;
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+    #tabel{
+        border-collapse: collapse;
+        font-family: sans-serif;
+        font-size: 15px;
+        width: 50%;
+        background-color: #f4fbf5;
+    }
+    #tabel th, #tabel td{
+        border: 1px solid #dddddd;
+        padding: 8px;
+        
+    }
+    #tabel tr:nth-child(even){
+        background-color: #e5f5f5;
+    }
+    #tabel th{
+        border-bottom: groove;
+    }
+    th{
+        font-size: 15px;
+        background-color: #55addc;
+        color: white;
+        text-shadow: 2px 2px 4px #000000  ;
+        ;
+    }
+    th.kosong{
+        border-radius: 10px 00px 00px  0px;
+        overflow: hidden;
+    }
+    th.new{
+        width: 19%;
+    }
+    th.cc{
+        width:19%;
+    }
+    th.sf{
+        width: 21%;
+        border-radius: 0px 10px 0px  0px;
+        overflow: hidden;
+    }
+    .subform{
+        font-style: italic;
+        font-family: sans-serif;
+    }
+    form{
+        font-family: sans-serif;
+        padding-top: 25px;
+    }
+    select {
+    background-color: white;
+    border: thin solid grey;
+    border-radius: 4px;
+    padding:2px;
+    padding-right: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+     }
+
+    select.country{
+
+    border-radius: 8px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30'><polyline points='8,12,15,8,22,12' fill='none' style='stroke:white;stroke-width:2'/><polyline points='8,18,15,22,22,18' fill='none' style='stroke:white;stroke-width:2'/></svg>"),
+    linear-gradient(to bottom, #a0d8ff 0%, #2591dd 150%);;
+    height: 100%;
+    width: 150px;
+    background-position: center right;
+    background-size:  1.5em 1.5em;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    }
+   t.country:focus{
+        border-color: grey;
+        outline: 0;
+    }
+    .formsubmit2{
+        padding-top: 10px;
+    }
+    .formsubmit{
+        line-height: 28px;
+    }
+    div.form{
+        padding-right: 73%;
+    }
+    #vname1{
+        margin-left: 78px;
+        padding-right: 70px;
+    }
+    #vname2{
+        margin-left: 80px;
+        padding-right: 70px;      
+    }
+    .yesno{
+        margin-left: 20px;
+    }
+    .k1{
+        font-weight: bold;
+    }
+    input.submit{
+        font-size: 15px;
+        margin-top: 10px;
+        margin-left: 20%;
+        background-color: darkgreen;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+    input.submit:hover{
+        background-color: white;
+        color: darkgreen;
+    }
+</style>
+<body>
+    <h2 class="judul"><b>Poetry Workshops</b></h2>
+    <p>We will be conducting a number of poetry workshops and symposiums throughout the year.</p>
+    <p>Please note that the following events are free to members:</p>
+    <ul>
+        <li>A Poetic Perspective</li>
+        <li>Wait Whitman at War</li>
+        <li>Found Poems and Outsider Poetry</li>
+    </ul>
+        <table id="tabel" border="1" >
+            <tr >
+                <th class="kosong"></th>
+                <th class="new">New York</th>
+                <th class="cc">Chicago</th>
+                <th class="sf">San Fransisco</th>
+            </tr>
+            <tr>
+                <td class="k1">A Poetic Perspective</td>
+                <td>Sat, 4 Feb 2012 11am-2pm</td>
+                <td>Sat, 3 Mar 2012 11am-2pm</td>
+                <td>Sat, 17 Mar 2012 11am-2pm</td>
+            </tr>
+            <tr>
+                <td class="k1">Wait Whitman at War</td>
+                <td>Sat, 7 Apr 2012 11am-1pm</td>
+                <td>Sat, 5 May 2012 11am-1pm</td>
+                <td>Sat, 19 May 2012 11am-1pm</td>
+            </tr>
+            <tr>
+                <td class="k1">Found Poems & Outsider Poetry</td>
+                <td>Sat, 9 Jun 2012 11am-2pm</td>
+                <td>Sat, 7 Jul 2012 11am-2pm</td>
+                <td>Sat, 21 May 2012 11am-2pm</td>
+            </tr>
+            <tr>
+                <td class="k1">Natural Death: An Exploration</td>
+                <td>Sat, 4 Aug 2012 11am-4pm</td>
+                <td>Sat, 8 Sep 2012 11am-4pm</td>
+                <td>Sat, 15 Sep 2012 11am-4pm</td>
+            </tr>
+        </table>
+<br>
+        <div class="form">
+    <fieldset>
+        <legend class="subform">Register your interest</legend>
+        <form class="formsubmit">
+            <label for="fname" id="fname" name="fname">Your name:</label>
+            <input type="text" id="vname1" name="fname" value="">
+<br>
+            <label for="femail" id="femail" email="femail">Your email:</label>
+            <input type="email" id="vname2" email="femail">
+            </form>
+            <form class="formsubmit2">
+            <label for="country">Your closest center:</label>
+            <select class="country" size="1">
+                <option value="ny">New York</option>
+                <option value="cc">Chicago</option>
+                <option value="sf">San Francisco</option>
+            </select>
+<br>        Are you a member ?
+            <input type="radio" class="yesno" id="yes" name="member" value="yes">
+            <label for="yes">Yes</label> 
+            <input type="radio" id="no" name="member" value="no">
+            <label for="no">No</label>     
+        </form>
+    </fieldset>
+    </div>
+    <input class="submit" type="submit" value="Register">
+
+</body>
+</html>
